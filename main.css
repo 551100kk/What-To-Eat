@@ -2,6 +2,7 @@ body{
 	font-family: sans-serif;
 	background: linear-gradient(rgb(194,228,241), #FFFFFF);
 	margin: 0;
+	min-width: 1300px;
 }
 h2{
 	font-weight: bolder;
@@ -20,7 +21,7 @@ div{
 	top: 0;
 	left: 0;
 	margin-left: 0;
-	background: transparent url(https://www.blogblog.com/1kt/simple/gradients_light.png) repeat-x scroll top left;
+	background: transparent url('gradients_light.png') repeat-x scroll top left;
 	width: 100%;
 }
 
@@ -33,10 +34,10 @@ div{
 	top: 0;
 	background: #333;
 	background: linear-gradient(#888, #000);
-	display: flex; 
-	width: 100%;
+	display: flex;
 	height: 47.2px;
 	border-radius: 0px;
+	min-width: 1300px;
 }
 .nav{
 	margin: 0;
@@ -106,7 +107,7 @@ div{
 }
 .wrap{
 	background-color: #FFFFFF;
-	background-image: url(https://www.csie.ntu.edu.tw/~b04902112/tmp/whattoeat/wrapback.jpg);
+	background-image: url('wrapback.jpg');
 	//opacity: 0.5;
 	margin: 0;
 	box-shadow: 3px 3px 20px 5px #cccccc;
