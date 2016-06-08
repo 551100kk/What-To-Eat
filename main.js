@@ -31,7 +31,7 @@ function settime(){
 }
 function showfood(){
 	var html="";
-	var str1="<img src=\"food/food",str2=".jpg\" height=\"160px\"></img>";
+	var str1="<img src=\"food/food",str2=".jpg\" height=\"same-as-width\" width=\"23%\"></img>";
 	var arr=[0,0,0,0],photo=19;
 	for(var i=0;i<4;i++){
 		var tmp=Math.floor(Math.random()*100000000)%photo,flag=1
@@ -55,6 +55,7 @@ function showfood(){
 function ranfood(){
 	document.getElementById("st").setAttribute("onclick","");
 	cntdwn(30);
+
 }
 function cntdwn(u){
 	if(u==0){
@@ -70,7 +71,7 @@ function cntdwn(u){
 }
 function set(){
 	var tmp=Math.floor(Math.random()*100000000)%cheapfood.length;
-	document.getElementById("resultid").innerHTML=cheapfood[tmp];
+	$("#resultid").html(cheapfood[tmp]);
 }
 function submitf(){
 	alert("此功能尚未開放");
@@ -79,3 +80,13 @@ function scroll_to_anchor(href){
 	var fromtop=60;
 	$('html, body').animate({ scrollTop: $(href).offset().top - fromtop });
 }
+function main(){
+	settime();
+	showfood();
+	$(window).scroll(function() {
+		var leftScroll = $(document).scrollLeft();
+		$('#top-menu').css({'left':-leftScroll});
+		
+	});	
+}
+main();

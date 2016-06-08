@@ -23,6 +23,7 @@ div{
 	margin-left: 0;
 	background: transparent url('gradients_light.png') repeat-x scroll top left;
 	width: 100%;
+	min-width: 1300px;
 }
 
 
@@ -169,6 +170,7 @@ div{
 	display:block;
 	margin:auto;
 	padding-top: 10px;
+	width: 70%;
 }
 .eat .result{
 	height: 200px;
